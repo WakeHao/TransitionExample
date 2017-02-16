@@ -2,7 +2,7 @@
 早在Android 4.4，Transition 就已经引入，但在5.0才得以真正的实现。而究竟Transition是用来干嘛的呢。接下来我将通过实例和原理解析来分析下Google这个强大的动画框架。
 先来张效果图镇住场面
 
-![Google Play上的Newsstand app(v3.3)](http://upload-images.jianshu.io/upload_images/2539828-7c7e554d36ad5fe3.gif?imageMogr2/auto-orient/strip)
+![Google Play上的Newsstand app(v3.3)](https://github.com/WakeHao/TransitionExample/blob/master/gif/first.gif)
 
 这个效果下文会介绍如何实现，不过要先理解透这个框架的一些基础概念。
 Transition Framework 核心就是根据Scene(场景,下文解释)的不同帮助开发者们自动生成动画。通常主要是通过以下几个方法开启动画。
