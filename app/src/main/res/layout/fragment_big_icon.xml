@@ -1,0 +1,18 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.wakehao.transitionexample.fragment.SmallIconFragment">
+    <ImageView
+        android:src="@mipmap/bg_4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/shared_big_circle"
+        android:transitionName="shared_circle_"
+        android:layout_width="100dp"
+        android:src="@mipmap/cuteboy"
+        android:layout_gravity="center_vertical"
+        android:layout_height="100dp" />
+
+</FrameLayout>

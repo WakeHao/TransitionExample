@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.wakehao.transitionexample.MainActivity">
+
+    <LinearLayout
+        android:weightSum="5"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+       >
+
+        <android.support.v7.widget.Toolbar
+        android:id="@+id/toolBar"
+        style="@style/Material_TextAppearance_Title"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:elevation="@dimen/elevation_toolbar"
+        android:layout_height="?android:attr/actionBarSize">
+    <TextView
+        android:text="MainActivity"
+        style="@style/MaterialAnimations.TextAppearance.Title.Inverse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    </android.support.v7.widget.Toolbar>
+<android.support.v7.widget.CardView
+    android:layout_margin="16dp"
+    android:onClick="goScene"
+    app:cardCornerRadius="4dp"
+    android:layout_width="match_parent"
+    android:layout_height="50dp">
+    <TextView
+        android:layout_gravity="center"
+        android:text="sceneDemo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_margin="16dp"
+            android:onClick="goBeginDelayed"
+            app:cardCornerRadius="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <TextView
+                android:layout_gravity="center"
+                android:text="beginDelayedDemo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+        android:layout_margin="16dp"
+        android:onClick="goContentTransitions"
+        app:cardCornerRadius="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:layout_gravity="center"
+            android:text="ContentTransitions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_margin="16dp"
+            android:onClick="goContent_and_Shared"
+            app:cardCornerRadius="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <TextView
+                android:layout_gravity="center"
+                android:text="Activity/Fragment Transition"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </android.support.v7.widget.CardView>
+
+
+    </LinearLayout>
+</RelativeLayout>

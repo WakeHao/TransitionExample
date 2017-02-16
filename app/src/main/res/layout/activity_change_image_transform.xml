@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:weightSum="5"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolBar"
+            style="@style/Material_TextAppearance_Title"
+            android:background="?android:colorPrimary"
+            android:layout_width="match_parent"
+            android:elevation="@dimen/elevation_toolbar"
+            android:layout_height="?android:attr/actionBarSize">
+            <TextView
+                android:text="ChangeImageTransform"
+                style="@style/MaterialAnimations.TextAppearance.Title.Inverse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </android.support.v7.widget.Toolbar>
+        <FrameLayout
+            android:id="@+id/scene_root"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4"
+            ></FrameLayout>
+
+        <Button
+            android:layout_marginTop="40dp"
+            android:onClick="change"
+            android:text="切换scene"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button" />
+
+
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_fragment_transition"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.wakehao.transitionexample.fragment.FragmentTransitionActivity">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolBar"
+        android:elevation="@dimen/elevation_toolbar"
+        style="@style/Material_TextAppearance_Title"
+        android:background="?android:colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize">
+        <TextView
+            android:text="FragmentTransition"
+            style="@style/MaterialAnimations.TextAppearance.Title.Inverse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </android.support.v7.widget.Toolbar>
+
+    <FrameLayout
+        android:layout_below="@id/toolBar"
+        android:id="@+id/container_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    </FrameLayout>
+
+
+</RelativeLayout>

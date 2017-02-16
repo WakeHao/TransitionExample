@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">TransitionExample</string>
+    <string name="nevermore">Your soul is mine!--from NeverMore</string>
+    <string name="cm">水晶室女莉莱出生在一个气候温和的地区，与性子火爆的姐姐莉娜一起长大，她很快就发现她天生对冰元素的吸引力给周围所有人制造了麻烦。只要她在附近坐下休息，井水和山泉瞬间就会被冻住；成熟的庄稼被寒霜冻伤，果园变成了冰的迷宫，然后垮塌损毁。当他们无奈的父母把莉娜送到南方后，又把莉莱流放到了寒冷北方的冰川残骸，一个隐居在蓝心冰川顶峰的寒冰巫师收留了她。经过长期的学习后，巫师认为莉莱已经能够独立的修习冰冻魔法了，于是他便降入冰川内开始千年的冬眠。从那以后，莉莱的冰冻法术变的愈发精湛，而现在，她的魔法已无可匹敌。</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

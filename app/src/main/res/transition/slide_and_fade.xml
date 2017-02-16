@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<transitionSet xmlns:android="http://schemas.android.com/apk/res/android"
+
+    >
+
+ <fade android:duration="500">
+    <targets>
+        <target android:targetId="@id/toolBar"></target>
+        <target android:targetId="@android:id/statusBarBackground"></target>
+        <target android:targetId="@id/tv_show"></target>
+    </targets>
+ </fade>
+
+  <slide android:startDelay="600">
+      <targets >
+          <target android:targetId="@id/icon_sf"></target>
+      </targets>
+  </slide>
+    <slide android:startDelay="700">
+        <targets >
+            <target android:targetId="@id/icon_bh"></target>
+        </targets>
+    </slide>
+
+<slide android:slideEdge="left"  android:startDelay="500">
+    <targets >
+        <target android:targetId="@id/tv_show"></target>
+    </targets>
+</slide>
+
+</transitionSet>

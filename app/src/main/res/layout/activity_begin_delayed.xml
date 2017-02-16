@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_begin_delayed"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.wakehao.transitionexample.BeginDelayedActivity">
+<android.support.v7.widget.Toolbar
+    android:id="@+id/toolBar"
+    style="@style/Material_TextAppearance_Title"
+    android:background="?android:colorPrimary"
+    android:layout_width="match_parent"
+    android:layout_height="?android:actionBarSize">
+    <TextView
+        android:text="BeginDelayedActivity"
+        style="@style/MaterialAnimations.TextAppearance.Title.Inverse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:id="@+id/scene_root"
+        android:layout_gravity="center_horizontal"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:gravity="center_horizontal"
+        android:layout_height="wrap_content">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/cuteboy"
+            android:src="@mipmap/cuteboy"
+            android:layout_margin="10dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp" />
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/cutegirl"
+            android:layout_toRightOf="@id/cuteboy"
+            android:src="@mipmap/cutegirl"
+            android:layout_margin="10dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp" />
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/hxy"
+            android:src="@mipmap/hxy"
+            android:layout_below="@id/cuteboy"
+            android:layout_margin="10dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp" />
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/lly"
+            android:layout_toRightOf="@id/hxy"
+            android:layout_below="@id/cuteboy"
+            android:src="@mipmap/lly"
+            android:layout_margin="10dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp" />
+
+
+
+    </RelativeLayout>
+
+</LinearLayout>

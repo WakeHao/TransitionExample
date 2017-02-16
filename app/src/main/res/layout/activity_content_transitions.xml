@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_content_transitions"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.wakehao.transitionexample.ContentTransitionsActivity">
+<android.support.v7.widget.Toolbar
+    android:id="@+id/toolBar"
+    android:elevation="@dimen/elevation_toolbar"
+    style="@style/Material_TextAppearance_Title"
+    android:background="?android:colorPrimary"
+    android:layout_width="match_parent"
+    android:layout_height="?android:attr/actionBarSize">
+    <TextView
+        android:text="Activity切换"
+        style="@style/MaterialAnimations.TextAppearance.Title.Inverse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</android.support.v7.widget.Toolbar>
+    <ImageView
+        android:id="@+id/image_bgg"
+        android:src="@mipmap/bg_1"
+        android:scaleType="fitXY"
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        android:layout_below="@+id/toolBar"
+        android:layout_alignParentStart="true" />
+<TextView
+    android:layout_below="@id/image_bgg"
+    android:layout_margin="8dp"
+    android:layout_centerHorizontal="true"
+    android:text="@string/cm"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" />
+
+</RelativeLayout>

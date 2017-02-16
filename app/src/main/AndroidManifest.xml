@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.wakehao.transitionexample">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SceneActivity"
+            android:theme="@style/AppTheme_Red" />
+        <activity android:name=".scene.SceneChangeBoundsActivity" />
+        <activity android:name=".scene.SceneChangeTransformActivity" />
+        <activity android:name=".scene.SceneChangeClipBoundsActivity" />
+        <activity android:name=".scene.SceneChangeImageTransformActivity" />
+        <activity android:name=".scene.SceneFadeSlideExplodeActivity" />
+        <activity
+            android:name=".BeginDelayedActivity"
+            android:theme="@style/AppTheme_Blue" />
+        <activity
+            android:name=".ContentTransitionsActivity"
+            android:theme="@style/AppTheme_Green" />
+        <activity
+            android:name=".WithSharedElementTransitionsActivity"
+            android:theme="@style/AppTheme_Yellow" />
+        <activity android:name=".ContentAndSharedTransitionActivity" />
+        <activity android:name=".fragment.FragmentTransitionActivity"
+            android:theme="@style/AppTheme_Blue"
+            ></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+
+    <LinearLayout
+        android:weightSum="5"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolBar"
+            style="@style/Material_TextAppearance_Title"
+            android:background="?android:colorPrimary"
+            android:layout_width="match_parent"
+            android:elevation="@dimen/elevation_toolbar"
+            android:layout_height="?android:attr/actionBarSize">
+            <TextView
+                android:text="SceneActivity"
+                style="@style/MaterialAnimations.TextAppearance.Title.Inverse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </android.support.v7.widget.Toolbar>
+       <Button
+           android:text="ChangeBounds"
+           android:layout_margin="8dp"
+           android:onClick="changeBounds"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content" />
+        <Button
+            android:text="changeTransform"
+            android:layout_margin="8dp"
+            android:onClick="changeTransform"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <Button
+            android:text="changeclipbounds"
+            android:layout_margin="8dp"
+            android:onClick="changeClipBounds"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <Button
+            android:text="changeimagebounds"
+            android:layout_margin="8dp"
+            android:onClick="changeImageTransform"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:text="fadeslideexplode"
+            android:layout_margin="8dp"
+            android:onClick="fade"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</RelativeLayout>
