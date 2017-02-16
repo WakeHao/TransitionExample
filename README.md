@@ -64,7 +64,7 @@ public void change(View view){
 上述简单的例子是通过第一种方式`TransitionManager.go()`触发动画。即在进入Activity的时候，手动将start scene通过
 `TransitionManager.go(scene1)`设置为scene1。点击button通过`TransitionManager.go(scene2，new ChangeBounds())`切换到end scene状态:scene2.Transition 框架通过`ChangeBounds`类分析start scene和end scene的不同创建并播放动画。由于`ChangeBounds`类是分析比较两个scene中view的位置边界创建移动和缩放动画。发现从scene1->scene2其实是1->4,2->3。于是就执行相应的动画，即是如下效果:
 
-![scene_simple.gif](http://upload-images.jianshu.io/upload_images/2539828-cc60a6d34ae071f4.gif?imageMogr2/auto-orient/strip)
+![scene_simple.gif](https://github.com/WakeHao/TransitionExample/blob/master/gif/scene_simple.gif)
 
 类似于`ChangeBounds`类的还有以下几种，他们都是继承Transiton类
 - ChangeBounds
@@ -79,7 +79,7 @@ public void change(View view){
 这三个都是根据view的visibility的不同分别创建渐入，滑动，爆炸动画。
 以上各个动画类的实现效果如下：
 
-![scene_all.gif](http://upload-images.jianshu.io/upload_images/2539828-8aa72435f0387d8a.gif?imageMogr2/auto-orient/strip)
+![scene_all.gif](https://github.com/WakeHao/TransitionExample/blob/master/gif/scene_all.gif)
 
 
 - AutoTransition
@@ -173,7 +173,7 @@ private void changeVisibility(View ...views){
 
 当触发点击事件时候，此时记录下当前scene status，然后改变被点击view的尺寸，并改变其他view的visibility，再记录下改变后的scene status。而本例中`beginDelayedTransition()`第二个参数传的是一个`ChangeBounds`和`Explode`动画集合，所以这个集合的中改变尺寸的执行缩放动画,改变visibility的执行爆炸效果。整体效果如下:
 
-![beginDelayed.gif](http://upload-images.jianshu.io/upload_images/2539828-ca091da862d1b0ad.gif?imageMogr2/auto-orient/strip)
+![beginDelayed.gif](https://github.com/WakeHao/TransitionExample/blob/master/gif/beginDelayed.gif)
 
 
 ## 界面切换动画
@@ -274,7 +274,7 @@ protected void onCreate(Bundle savedInstanceState) {
 
 实现的效果如下:
 
-![contentTransition.gif](http://upload-images.jianshu.io/upload_images/2539828-817682cf65853b7a.gif?imageMogr2/auto-orient/strip)
+![contentTransition.gif](https://github.com/WakeHao/TransitionExample/blob/master/gif/contentTransition.gif)
 
 
 仔细看着动画你其实可以发现A的状态栏也跟着下拉上拉了，而且和下面的视图有一定的间距。处女座表示不能忍。
@@ -376,21 +376,11 @@ public boolean isTransitionGroup() {
 
 实现效果如下，自己加了点其他特效
 
-![finish](http://upload-images.jianshu.io/upload_images/2539828-8d3f9909249f1aff.gif?imageMogr2/auto-orient/strip)
+![finish](https://github.com/WakeHao/TransitionExample/blob/master/gif/last.gif)
 
-
-
-具体代码我就不贴了，本文的所有的代码已上传Github([我是链接](https://github.com/WakeHao/TransitionExample "我是链接"))，包括Fragment的切换本文未作介绍代码中有写。希望大家能点个star。
-如果你看了一遍还是不知所云那我强烈建议你结合代码运行下在看一遍，其实搞懂了还是蛮简单的。
-
-最后我想说的是关于这个Transition Framework还有一些内容没说完，可能要等过段时间更新了，接下来还会写关于Dagger 2的相关文章以及NavigationBar的加强版，敬请期待吧。
-
-![拜拜](http://upload-images.jianshu.io/upload_images/2539828-20f2e0991852638b.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 
 
 # 参考
 - [Getting Started with Activity & Fragment Transitions](http://www.androiddesignpatterns.com/2014/12/activity-fragment-transitions-in-android-lollipop-part1.html "Getting Started with Activity & Fragment Transitions")
 - [https://github.com/lgvalle/Material-Animations](https://github.com/lgvalle/Material-Animations "https://github.com/lgvalle/Material-Animations")
-
-如果有什么错误欢迎指正。
